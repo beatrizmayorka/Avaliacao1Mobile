@@ -15,6 +15,18 @@ Para sua referência, segue o método `jogar()`,
 que implementa a lógica básica do início do jogo:
 */
 public class Truco {
+    // Atributos privados
+    private Jogador jogadorUm;
+    private Jogador jogadorDois;
+    private Baralho baralho;
+    private Carta cartaVirada;
+
+    // Inicializa os atributos 
+    public Truco() {
+        this.jogadorUm = new Jogador();
+        this.JogadorDois = new Jogador();
+        this.baralho = new Baralho();
+    }
 
     private void imprimeMesa() {
         System.out.println("Apenas um placeholder para a impressão de mesa.");
@@ -26,5 +38,19 @@ public class Truco {
         distribuiMaos();
         inicializaManilha();
         imprimeMesa();
-    }    
+    }  
+
+    // Método privado que embaralha as cartas
+    private void embaralhaCartas() {
+        this.baralho.embaralhar();
+    }  
+
+    private void distribuiMaos() {
+
+    }
+
+    // Método privado que põe uma carta na mesa
+    private void inicializaManilha() {
+        this.cartaVirada = this.baralho.distribuir();
+    }
 }
