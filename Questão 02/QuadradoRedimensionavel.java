@@ -6,12 +6,12 @@ Essa classe deve _implementar_  um construtor que recebe o valor de
 */
 public class QuadradoRedimensionavel extends Quadrado implements Redimensionavel {
 
-    QuadradoRedimensionavel(double lado) {
+    public QuadradoRedimensionavel(double lado) {
 		super(lado);
 	}
 
 	@Override
-	public void redimensionar() {
+	public void redimensionar(int percentual) {
 	}
 
 }
