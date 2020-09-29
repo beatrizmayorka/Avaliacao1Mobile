@@ -4,7 +4,7 @@ Implemente uma classe `QuadradoRedimensionavel`, que é _subclasse_ de
 Essa classe deve _implementar_  um construtor que recebe o valor de 
 `lado` e o transmite para o construtor da __superclasse__.
 */
-public class QuadradoRedimensionavel extends Quadrado implements Redimensionavel {
+public class QuadradoRedimensionavel extends Quadrado implements Redimensionavel { // Irá implementar a interface 'Redimensionavel'
 
     public QuadradoRedimensionavel(double lado) {
 		super(lado);
@@ -12,6 +12,7 @@ public class QuadradoRedimensionavel extends Quadrado implements Redimensionavel
 
 	@Override
 	public void redimensionar(int percentual) {
+		this.lado += this.lado * percentual / 100;
 	}
 
 }
