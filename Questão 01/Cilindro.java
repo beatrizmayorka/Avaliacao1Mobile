@@ -7,14 +7,14 @@ parâmetros. Este construtor deve configurar o valor de
 */
 
 public class Cilindro {
-    
+    // Atributos
     private Circulo base;
     private double altura;
 
-
-    public Cilindro() { }
-    public Cilindro(double altura ) {
+    // Construtor sem parâmetros 
+    public Cilindro() {
         this.altura = "1.0";
+        this.base = new Circulo();
     }
     
 }
