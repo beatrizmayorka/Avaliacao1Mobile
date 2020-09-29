@@ -5,7 +5,7 @@ o atributo `lado`. Faça com que essa classe __implemente__ a
 interface `Geometria`.
 */
 public class Quadrado implements Geometria {  // Irá implementar a interface 'Geometria'
-    // atributo protegido 
+    // Atributo protegido 
     protected double lado;
     
     // Construtor que preenche o atributo 'lado'
