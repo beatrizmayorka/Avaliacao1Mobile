@@ -24,7 +24,7 @@ public class Truco {
     // Inicializa os atributos 
     public Truco() {
         this.jogadorUm = new Jogador();
-        this.JogadorDois = new Jogador();
+        this.jogadorDois = new Jogador();
         this.baralho = new Baralho();
     }
 
@@ -46,6 +46,15 @@ public class Truco {
     }  
 
     private void distribuiMaos() {
+        
+        int count = 0;
+        
+        while(count < 3) {
+            
+            jogadorUm.recebeCarta(baralho.distribuir());
+            jogadorDois.recebeCarta(baralho.distribuir());
+            count++;
+        }     
 
     }
 
